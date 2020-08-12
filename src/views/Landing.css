@@ -1,0 +1,30 @@
+.landing {
+  height: 100vh;
+  /* background-image: url("../assets/pattern.svg"); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.content-wrapper {
+  text-align: center;
+  padding-top: 80px;
+}
+.landing-title {
+  font-size: 40px;
+  margin: 10px;
+}
+.box-wrapper {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 40px 0;
+  overflow-y: scroll;
+}
