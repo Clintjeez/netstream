@@ -4,9 +4,9 @@ import "./landingCards.css";
 
 import memoji from "../assets/ClintMemoji.png";
 
-function landingCards({ className, src, title, text }) {
+function landingCards({ className, src, title, text, onclick }) {
   return (
-    <div className="user-box">
+    <div className="user-box" onClick={onclick}>
       <div className={`avatar-wrapper ${className}`}>
         <img className="user-avatar" src={`${src}`} alt="clint memoji" />
       </div>

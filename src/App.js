@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./themes/globalStyles";
-import { lightTheme, darkTheme } from "./themes/themes";
 
-// UI COMPONENTS
-import Landing from "./views/Landing";
+// Main Router
+//import RouterComponent from "./router/Router";
+
+// View components
+import Landing from "./views/LandingView/Landing";
+import Profile from "./views/ProfileView/Profile";
+import Home from "./views/HomeView/HomeView";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-  const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
-  };
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <React.Fragment>
-        <GlobalStyles />
-        {/* <button onClick={themeToggler}>Switch theme</button> */}
-        <Landing />
-      </React.Fragment>
-    </ThemeProvider>
+    <React.Fragment>
+      <BrowserRouter>
+        <Route exact path="/" component={Landing} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/home" component={Home} />
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 

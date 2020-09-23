@@ -1,11 +1,5 @@
-.landing {
-  height: 100vh;
-  /* background-image: url("../assets/pattern.svg"); */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #f6f6f6;
-  overflow: hidden;
+.profiles {
+  background-color: #000;
 }
 .header-wrapper {
   display: flex;
