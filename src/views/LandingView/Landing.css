@@ -63,10 +63,12 @@
 .landing__subtitle {
   font-size: 26px;
   margin-top: 5px;
+  color: #fff;
 }
 .landing__txt {
   font-size: 19px;
   margin-top: 50px;
+  color: #fff;
 }
 .landing__form {
   width: 100%;

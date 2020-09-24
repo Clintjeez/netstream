@@ -1,0 +1,50 @@
+.banner__card {
+  background-color: #000000be;
+  width: 550px;
+  margin-left: 640px;
+  margin-top: 120px;
+  padding: 30px;
+
+  border-radius: 10px;
+
+  position: relative;
+  z-index: 3;
+}
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner__card__img {
+  height: 300px;
+  width: 260px;
+  position: relative;
+  margin-top: -60px;
+  border-radius: 10px;
+}
+.banner__card__title {
+  color: #fff;
+  font-size: 50px;
+  width: 320px;
+  margin-left: 20px;
+}
+
+.banner__card__btn_wrapper {
+  margin-top: 40px;
+}
+
+.banner__card__btn {
+  width: 120px;
+  height: 40px;
+  background-color: #fade1c;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+}
+.banner__card__description {
+  color: #fff;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 15px;
+}

@@ -35,7 +35,9 @@ const LandingView = () => {
                 <input className="uk-input landing__input" type="text" />
               </div>
               <div className="col">
-                <button className="landing__btn">Get Started</button>
+                <Link to="/profile">
+                  <button className="landing__btn">Get Started</button>
+                </Link>
               </div>
             </div>
           </form>

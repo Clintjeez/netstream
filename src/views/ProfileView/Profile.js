@@ -45,7 +45,7 @@ const Users = (props) => {
                 text="Add a new user"
                 onclick={openModalHandler}
               />
-              <Link to="home">
+              {/* <Link to="home">
                 <LandingCards
                   className="yellow-bg"
                   src={memoji}
@@ -96,7 +96,7 @@ const Users = (props) => {
                   title="Winnie Bae"
                   text="Last seen 2 months ago"
                 />
-              </Link>
+              </Link> */}
 
               <Link to="/home">
                 <LandingCards

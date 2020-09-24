@@ -10,11 +10,15 @@ import "./HomeView.css";
 const Home = () => {
   return (
     <div className="home">
-      <Banner></Banner>
-
-      <Row title="Trending Now" fetchUrl={request.fetchTrending} isLargeRow />
-      <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
-      <Row title="Netflix Originals" fetchUrl={request.fetchNetflixOriginals} />
+      <Banner />
+      <div className="container">
+        <Row title="Trending Now" fetchUrl={request.fetchTrending} isLargeRow />
+        <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
+        <Row
+          title="Netflix Originals"
+          fetchUrl={request.fetchNetflixOriginals}
+        />
+      </div>
     </div>
   );
 };
