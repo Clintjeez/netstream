@@ -1,0 +1,30 @@
+.nav__wrapper {
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  padding-top: 20px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.nav-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: #fade1c;
+}
+
+.nav {
+  text-align: center;
+  text-decoration: none;
+}
+.nav li {
+  display: inline;
+  margin-left: 10px;
+  list-style: none;
+}
+.nav__link {
+  color: #fade1c;
+}

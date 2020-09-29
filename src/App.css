@@ -2,7 +2,11 @@
   margin: 0;
 }
 
-.container {
+.main__container {
   width: 90%;
   margin: auto;
+}
+
+.app {
+  /* background-color: #111; */
 }

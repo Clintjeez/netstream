@@ -13,7 +13,7 @@ import "../../../node_modules/uikit/dist/js/uikit-icons";
 const LandingView = () => {
   return (
     <div className="landing">
-      <div className="container">
+      <div className="main__container">
         <header className="landing__header">
           <p className="brand">Netstream</p>
           <buuton className="header__btn">Signin</buuton>
@@ -32,11 +32,18 @@ const LandingView = () => {
             <div className="grid">
               <div className="col">
                 <span className="uk-form-icon" uk-icon="icon: user"></span>
-                <input className="uk-input landing__input" type="text" />
+                <input
+                  className="uk-input landing__input"
+                  type="text"
+                  placeholder="Email address"
+                  required
+                />
               </div>
               <div className="col">
                 <Link to="/profile">
-                  <button className="landing__btn">Get Started</button>
+                  <button type="submit" className="landing__btn">
+                    Get Started
+                  </button>
                 </Link>
               </div>
             </div>

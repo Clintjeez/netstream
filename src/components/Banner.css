@@ -11,9 +11,14 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.37);
-  box-shadow: inset 120px 100px 250px #00000079,
-    inset -120px -100px 250px #0000004b;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    252deg,
+    rgba(0, 0, 0, 0.6993172268907564) 57%,
+    rgba(0, 0, 0, 0.8757878151260504) 100%
+  );
+  /* box-shadow: inset 120px 100px 250px #00000079,
+    inset -120px -100px 250px #0000004b; */
 }
 
 .banner__contents {

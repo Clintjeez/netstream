@@ -3,6 +3,10 @@ import React from "react";
 import "./BannerCard.css";
 
 function BannerCard({ CardPoster, CardTitle, CardDescription }) {
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  }
+
   return (
     <div className="banner__card">
       <div className="grid__wrapper">
@@ -23,7 +27,9 @@ function BannerCard({ CardPoster, CardTitle, CardDescription }) {
       </div>
 
       <div className="banner__card__description__wrapper">
-        <p className="banner__card__description">{CardDescription}</p>
+        <p className="banner__card__description">
+          {truncate(CardDescription, 150)}
+        </p>
       </div>
     </div>
   );

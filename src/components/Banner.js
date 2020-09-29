@@ -5,6 +5,7 @@ import requests from "../api/request";
 import "./Banner.css";
 
 import BannerCard from "./BannerCard";
+import Navbar from "../components/Navbar";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -33,9 +34,9 @@ function Banner() {
         backgroundPosition: "center center",
       }}
     >
-      <div className="container">
+      <div className="main__container">
+        {/* <Navbar /> */}
         <div className="banner__contents">
-          {/* <h1 className="banner__description">{movie?.overview}</h1> */}
           <BannerCard
             CardPoster={`${base_url}${movie?.poster_path}`}
             CardTitle={movie?.title || movie?.name || movie?.original_name}

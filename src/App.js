@@ -12,13 +12,13 @@ import Home from "./views/HomeView/HomeView";
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="app">
       <BrowserRouter>
         <Route exact path="/" component={Landing} />
         <Route path="/profile" component={Profile} />
         <Route path="/home" component={Home} />
       </BrowserRouter>
-    </React.Fragment>
+    </div>
   );
 }
 
