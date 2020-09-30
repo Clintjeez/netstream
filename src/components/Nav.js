@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Nav.css";
 
 function Nav() {
+  const [show, handleShow] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   return (
-    <div className="nav">
-      <h1 className="nav-brand">Netstream</h1>
-      <ul className="nav-links">
+    <div className={`nav ${show && "nav__black"}`}>
+      <h1 className="nav__brand">Netstream</h1>
+      <ul className="nav__links">
         <li>Home</li>
         <li>Home</li>
         <li>Home</li>
       </ul>
-      <div>
+      <div className="options__wrapper">
         <p>Profile</p>
       </div>
     </div>
