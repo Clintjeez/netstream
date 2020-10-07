@@ -40,7 +40,7 @@ const Users = (props) => {
           </header>
 
           <section className="content-wrapper">
-            <h1 className="landing-title">Who's watching ?</h1>
+            <h1 className="title">Who's watching ?</h1>
 
             <div className="box-wrapper">
               <LandingCards
