@@ -14,9 +14,11 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Route exact path="/" component={Landing} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/home" component={Home} />
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/home" component={Home} />
+        </Switch>
       </BrowserRouter>
     </div>
   );

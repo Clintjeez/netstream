@@ -15,8 +15,11 @@ const LandingView = () => {
     <div className="landing">
       <div className="main__container">
         <header className="landing__header">
-          <p className="brand">Netstream</p>
-          <buuton className="header__btn">Signin</buuton>
+          <Link to="/">
+            <p className="brand">Netstream</p>
+          </Link>
+
+          <button className="header__btn">Signin</button>
         </header>
         <div className="landing__contents">
           <h1 className="landing__title">

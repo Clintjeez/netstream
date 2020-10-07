@@ -1,0 +1,14 @@
+.main__header {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding-top: 0;
+}
+
+.brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: #fade1c;
+  float: left;
+}

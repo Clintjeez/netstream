@@ -31,10 +31,14 @@ const Users = (props) => {
       </Modal> */}
       <div className="profiles">
         <div className="container">
-          <header className="landing__header">
-            <p className="brand">Netstream</p>
-            <buuton className="header__btn">Manage profile</buuton>
+          <header className="header">
+            <Link to="/">
+              <p className="brand">Netstream</p>
+            </Link>
+
+            <button className="header__button">Manage Account</button>
           </header>
+
           <section className="content-wrapper">
             <h1 className="landing-title">Who's watching ?</h1>
 
@@ -53,33 +57,6 @@ const Users = (props) => {
                   text="Last seen 3 hours ago"
                 />
               </Link>
-              <Link to="home">
-                <LandingCards
-                  className="purple-bg"
-                  src={ebenImg}
-                  title="Eben"
-                  text="Last seen 600 years ago"
-                />
-              </Link>
-
-              <Link to="home">
-                <LandingCards
-                  className="pink-bg"
-                  src={winnieImg}
-                  title="Winnie Bae"
-                  text="Last seen 2 months ago"
-                />
-              </Link>
-
-              <Link to="home">
-                <LandingCards
-                  className="yellow-bg"
-                  src={memoji}
-                  title="ClintJeez"
-                  text="Last seen 3 hours ago"
-                />
-              </Link>
-
               <Link to="home">
                 <LandingCards
                   className="purple-bg"

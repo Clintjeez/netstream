@@ -20,8 +20,8 @@ function Nav() {
       <h1 className="nav__brand">Netstream</h1>
       <ul className="nav__links">
         <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
+        <li>Tv Shows</li>
+        <li>Movies</li>
       </ul>
       <div className="options__wrapper">
         <p>Profile</p>

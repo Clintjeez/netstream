@@ -29,17 +29,21 @@
   font-family: "Bebas Neue", cursive;
   font-size: 40px;
   color: #fade1c;
-  display: inline;
   float: left;
 }
 .header__btn {
+  height: 45px;
   background-color: #fade1c;
-  color: #000000;
+  color: #111;
   float: right;
   font-size: 17px;
-  padding: 7px 15px;
+  padding: 10px 15px;
   border-radius: 3px;
+  border: 0;
   margin-top: 10px;
+}
+.header__btn:hover {
+  cursor: pointer;
 }
 
 .landing__contents {
